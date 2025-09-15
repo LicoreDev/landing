@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- Primary Meta Tags -->
+    <title>Why TypeScript is Essential for Modern Startups | Licore Blog</title>
+    <meta name="title" content="Why TypeScript is Essential for Modern Startups | Licore Blog">
+    <meta name="description" content="Discover how TypeScript can accelerate your development velocity, improve code quality, and reduce bugs in your startup's codebase. Learn why top startups choose TypeScript over JavaScript.">
+    <meta name="keywords" content="TypeScript, JavaScript, startups, software development, type safety, development velocity, code quality, React, Node.js">
+    <meta name="author" content="Licore Team">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://licore.dev/blog/why-typescript-for-startups.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://licore.dev/blog/why-typescript-for-startups.html">
+    <meta property="og:title" content="Why TypeScript is Essential for Modern Startups | Licore Blog">
+    <meta property="og:description" content="Discover how TypeScript can accelerate your development velocity, improve code quality, and reduce bugs in your startup's codebase.">
+    <meta property="og:image" content="../src/icons/LicoreIcon.svg">
+    <meta property="og:site_name" content="Licore">
+    <meta property="article:author" content="Licore Team">
+    <meta property="article:published_time" content="2025-09-16">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://licore.dev/blog/why-typescript-for-startups.html">
+    <meta property="twitter:title" content="Why TypeScript is Essential for Modern Startups | Licore Blog">
+    <meta property="twitter:description" content="Discover how TypeScript can accelerate your development velocity, improve code quality, and reduce bugs in your startup's codebase.">
+    <meta property="twitter:image" content="../src/icons/LicoreIcon.svg">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="../src/icons/LicoreIcon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../src/icons/LicoreIcon.svg">
+
+    <!-- Styles -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Why TypeScript is Essential for Modern Startups",
+        "description": "Discover how TypeScript can accelerate your development velocity, improve code quality, and reduce bugs in your startup's codebase.",
+        "author": {
+            "@type": "Organization",
+            "name": "Licore Team",
+            "url": "https://licore.dev/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Licore",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://licore.dev/src/icons/LicoreIcon.svg"
+            }
+        },
+        "datePublished": "2025-09-16",
+        "dateModified": "2025-09-16",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://licore.dev/blog/why-typescript-for-startups.html"
+        },
+        "articleSection": "Technology",
+        "keywords": ["TypeScript", "JavaScript", "startups", "software development", "type safety"]
+    }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <div class="flex items-center">
+                <a href="../index.html" class="flex items-center">
+                    <svg class="h-10 w-auto text-black transition-transform duration-300 hover:scale-105" viewBox="0 0 521 178" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Licore Logo" role="img">
+                        <path d="M178 133.5C178 145.196 178 151.044 176.486 155.784C173.342 165.628 165.628 173.342 155.784 176.486C151.044 178 145.196 178 133.5 178H89C89 178 0 178 89 89C102.353 89 118.581 89 133.506 89C145.198 89 151.044 89 155.784 90.5138C165.628 93.6579 173.342 101.372 176.486 111.216C178 115.956 178 121.804 178 133.5Z" fill="currentColor"/>
+                        <path d="M89 89C75.6474 89 59.4187 89 44.4945 89C32.8021 89 26.9559 89 22.2163 87.4863C12.3719 84.3421 4.65791 76.6281 1.51375 66.7837C0 62.0442 0 56.1961 0 44.5C0 32.8039 0 26.9559 1.51375 22.2163C4.65791 12.3719 12.3719 4.65791 22.2163 1.51375C26.9559 0 32.8039 0 44.5 0H89C89 0 178 6.10352e-05 89 89Z" fill="currentColor"/>
+                        <path d="M338.343 116C333.077 116 328.426 114.841 324.391 112.522C320.424 110.204 317.278 106.999 314.952 102.907C312.695 98.7474 311.567 94.0422 311.567 88.7914C311.567 83.5406 312.695 78.9036 314.952 74.8802C317.278 70.7887 320.424 67.5837 324.391 65.2652C328.426 62.9466 333.077 61.7874 338.343 61.7874C342.652 61.7874 346.551 62.6057 350.039 64.2423C353.527 65.8107 356.4 68.061 358.657 70.9933C360.914 73.8574 362.35 77.1988 362.966 81.0175H350.552C349.8 78.2217 348.363 76.0395 346.243 74.4711C344.123 72.9027 341.558 72.1185 338.549 72.1185C335.744 72.1185 333.316 72.8004 331.265 74.1642C329.281 75.5281 327.742 77.4715 326.648 79.9946C325.554 82.5177 325.007 85.45 325.007 88.7914C325.007 92.201 325.554 95.1674 326.648 97.6905C327.742 100.214 329.315 102.191 331.367 103.623C333.419 104.987 335.813 105.669 338.549 105.669C341.558 105.669 344.123 104.885 346.243 103.316C348.363 101.748 349.8 99.5658 350.552 96.7699H362.966C362.35 100.589 360.88 103.964 358.554 106.896C356.297 109.76 353.425 112.011 349.936 113.647C346.517 115.216 342.652 116 338.343 116Z" fill="currentColor"/>
+                        <path d="M289.221 114.977V62.8103H302.148V114.977H289.221Z" fill="currentColor"/>
+                        <path d="M288.606 54.2181V40H302.661V54.2181H288.606Z" fill="currentColor"/>
+                        <path d="M231 114.977V41.3298H244.337V104.441H280.655V114.977H244.337H237.361H231Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M395.777 116C390.237 116 385.347 114.841 381.107 112.522C376.935 110.204 373.686 106.999 371.361 102.907C369.035 98.7474 367.872 94.0081 367.872 88.6891C367.872 83.3701 369.035 78.699 371.361 74.6757C373.686 70.6523 376.935 67.5155 381.107 65.2652C385.347 62.9466 390.237 61.7874 395.777 61.7874C401.386 61.7874 406.276 62.9466 410.448 65.2652C414.62 67.5155 417.869 70.6523 420.194 74.6757C422.52 78.699 423.683 83.3701 423.683 88.6891C423.683 94.0081 422.486 98.7474 420.092 102.907C417.766 106.999 414.518 110.204 410.346 112.522C406.173 114.841 401.317 116 395.777 116ZM403.164 103.623C400.975 104.987 398.513 105.669 395.777 105.669C392.973 105.669 390.477 104.987 388.288 103.623C386.168 102.191 384.458 100.214 383.159 97.6905C381.928 95.0992 381.312 92.0646 381.312 88.5868C381.312 83.4724 382.68 79.4491 385.416 76.5169C388.151 73.5846 391.605 72.1185 395.777 72.1185C399.95 72.1185 403.369 73.5846 406.037 76.5169C408.772 79.4491 410.14 83.4724 410.14 88.5868C410.14 92.0646 409.525 95.0992 408.294 97.6905C407.063 100.214 405.353 102.191 403.164 103.623Z" fill="currentColor"/>
+                        <path d="M433.191 114.977V62.8103H445.81V72.4026C447.058 69.4103 448.802 67.0311 451.042 65.2652C453.983 62.9466 457.505 61.7874 461.609 61.7874C463.045 61.7874 464.071 61.9238 464.687 62.1965V74.3688C464.345 74.2324 463.866 74.1642 463.25 74.1642C462.635 74.096 461.882 74.0619 460.993 74.0619C456 74.0619 452.273 75.153 449.811 77.3352C447.348 79.5173 446.117 82.9951 446.117 87.7685V114.977H433.191Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M495.557 116C490.017 116 485.161 114.841 480.989 112.522C476.885 110.204 473.671 106.999 471.345 102.907C469.088 98.8156 467.96 94.1104 467.96 88.7914C467.96 83.4724 469.088 78.8013 471.345 74.778C473.671 70.6864 476.885 67.5155 480.989 65.2652C485.093 62.9466 489.88 61.7874 495.352 61.7874C500.55 61.7874 505.064 62.8784 508.894 65.0606C512.724 67.1745 515.699 70.175 517.82 74.0619C519.94 77.9489 521 82.4837 521 87.6662C521 88.6209 520.966 89.5074 520.897 90.3257C520.829 91.144 520.726 91.9623 520.59 92.7806H481.103C481.563 96.5659 482.756 99.6004 484.682 101.884C487.281 104.817 490.941 106.283 495.66 106.283C498.396 106.283 500.789 105.771 502.841 104.748C504.893 103.725 506.398 102.157 507.355 100.043H519.564C517.854 104.953 514.947 108.84 510.843 111.704C506.808 114.568 501.713 116 495.557 116ZM495.147 71.5047C499.182 71.5047 502.328 72.7322 504.585 75.1871C506.449 77.2142 507.543 80.0783 507.868 83.7793H481.308C481.871 80.597 482.995 78.0057 484.682 76.0054C487.281 73.005 490.77 71.5047 495.147 71.5047Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+            <a href="mailto:contact@licore.dev" class="px-6 py-2 bg-black text-white font-semibold transition-all duration-300 hover:scale-105 rounded-4xl">Connect with us</a>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <main class="pt-32">
+        <!-- Article Header -->
+        <section class="py-16 bg-gray-50 border-b border-gray-100">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="mb-6">
+                    <span class="inline-block px-3 py-1 bg-black text-white text-xs font-medium uppercase tracking-wider rounded-full">
+                        Technology
+                    </span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-black leading-tight">
+                    Why TypeScript is Essential for Modern Startups
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    Discover how TypeScript can accelerate your development velocity, improve code quality, and reduce bugs in your startup's codebase.
+                </p>
+                <div class="flex items-center space-x-6 text-sm text-gray-500">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center">
+                            <span class="text-white text-sm font-bold">L</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-black">Licore Team</div>
+                            <div>September 16, 2025</div>
+                        </div>
+                    </div>
+                    <span>7 min read</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Body -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        In the fast-paced world of startup development, every decision counts. From choosing the right tech stack to building scalable architectures, the choices you make today will determine your ability to iterate quickly and ship quality products. One technology that has become increasingly essential for modern startups is <strong>TypeScript</strong>.
+                    </p>
+
+                    <h2 class="text-3xl font-bold mb-6 text-black">The JavaScript Dilemma</h2>
+                    <p class="mb-6">
+                        JavaScript has been the backbone of web development for decades, powering everything from simple websites to complex enterprise applications. However, as applications grow in complexity, JavaScript's dynamic nature can become a double-edged sword. Without static type checking, developers often encounter runtime errors that could have been caught during development.
+                    </p>
+
+                    <blockquote class="border-l-4 border-black pl-6 py-4 my-8 bg-gray-50 italic">
+                        "TypeScript doesn't just catch bugs—it prevents them from ever existing in the first place."
+                    </blockquote>
+
+                    <h2 class="text-3xl font-bold mb-6 text-black">Why Startups Need TypeScript</h2>
+
+                    <h3 class="text-2xl font-bold mb-4 text-black">1. Enhanced Developer Productivity</h3>
+                    <p class="mb-6">
+                        TypeScript's type system provides intelligent autocompletion, refactoring support, and inline documentation. This means developers can write code faster and with more confidence. For startups where time-to-market is critical, this productivity boost can be the difference between launching on time or missing deadlines.
+                    </p>
+
+                    <h3 class="text-2xl font-bold mb-4 text-black">2. Fewer Runtime Bugs</h3>
+                    <p class="mb-6">
+                        By catching type-related errors at compile time rather than runtime, TypeScript significantly reduces the number of bugs that make it to production. This is particularly valuable for startups that can't afford the downtime or reputation damage caused by application crashes.
+                    </p>
+
+                    <h3 class="text-2xl font-bold mb-4 text-black">3. Better Code Maintainability</h3>
+                    <p class="mb-6">
+                        As your startup grows, so does your codebase. TypeScript makes it easier to refactor code, onboard new developers, and maintain large codebases. The type definitions serve as living documentation that keeps everyone on the same page.
+                    </p>
+
+                    <h3 class="text-2xl font-bold mb-4 text-black">4. Improved Developer Experience</h3>
+                    <p class="mb-6">
+                        Modern IDEs provide excellent TypeScript support with features like:
+                    </p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Intelligent code completion</li>
+                        <li>Real-time error detection</li>
+                        <li>Advanced refactoring tools</li>
+                        <li>Better debugging capabilities</li>
+                    </ul>
+
+                    <h2 class="text-3xl font-bold mb-6 text-black">Real-World Impact</h2>
+                    <p class="mb-6">
+                        We've seen startups reduce their bug rates by up to 50% after adopting TypeScript. One of our clients, a fintech startup, reported that TypeScript helped them ship their MVP 30% faster than planned, allowing them to capture market share before competitors.
+                    </p>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 my-8">
+                        <h4 class="font-bold text-lg mb-3 text-black">Case Study: FinTech Startup</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><strong>Before TypeScript:</strong> 15+ production bugs per month</li>
+                            <li><strong>After TypeScript:</strong> 3-5 production bugs per month</li>
+                            <li><strong>Development Speed:</strong> 40% faster feature delivery</li>
+                            <li><strong>Team Satisfaction:</strong> Significantly improved</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="text-3xl font-bold mb-6 text-black">Getting Started with TypeScript</h2>
+                    <p class="mb-6">
+                        Migrating to TypeScript doesn't have to be overwhelming. Here's a practical approach:
+                    </p>
+
+                    <ol class="list-decimal pl-6 mb-6 space-y-3">
+                        <li><strong>Start Small:</strong> Begin with a single file or component</li>
+                        <li><strong>Use Strict Mode Gradually:</strong> Enable strict type checking incrementally</li>
+                        <li><strong>Leverage Existing Libraries:</strong> Most popular libraries have TypeScript definitions</li>
+                        <li><strong>Invest in Type Definitions:</strong> Create types for your business logic</li>
+                    </ol>
+
+                    <h2 class="text-3xl font-bold mb-6 text-black">The Future of JavaScript Development</h2>
+                    <p class="mb-6">
+                        TypeScript has become the standard for serious JavaScript development. Major frameworks like React, Vue, and Angular all have excellent TypeScript support. As the ecosystem matures, TypeScript will continue to evolve, offering even better developer experiences and more powerful type system features.
+                    </p>
+
+                    <h2 class="text-3xl font-bold mb-6 text-black">Conclusion</h2>
+                    <p class="mb-8">
+                        For modern startups, TypeScript isn't just a nice-to-have—it's a strategic advantage. The combination of improved developer productivity, fewer bugs, and better maintainability makes it an essential tool for any serious development team. If you're building a startup today, TypeScript should be at the foundation of your tech stack.
+                    </p>
+
+                    <div class="bg-black text-white rounded-xl p-8 my-8">
+                        <h3 class="text-2xl font-bold mb-4">Ready to Modernize Your Tech Stack?</h3>
+                        <p class="mb-6 opacity-90">
+                            Let's discuss how TypeScript and other modern technologies can accelerate your startup's growth.
+                        </p>
+                        <a href="../index.html#contact" class="inline-flex items-center px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                            Get in Touch
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article Footer -->
+                <div class="border-t border-gray-200 pt-8 mt-12">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center">
+                                <span class="text-white font-bold">L</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-black">Licore Team</div>
+                                <div class="text-gray-500 text-sm">Building innovative software solutions</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <a href="../index.html" class="text-gray-600 hover:text-black font-medium transition-colors duration-300">
+                                Home →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-20 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16 px-6">
+            <div class="flex flex-col items-center lg:items-start gap-8">
+                <svg class="h-12 w-auto text-white transition-transform duration-300 hover:scale-105" viewBox="0 0 521 178" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Licore Logo" role="img">
+                    <path d="M178 133.5C178 145.196 178 151.044 176.486 155.784C173.342 165.628 165.628 173.342 155.784 176.486C151.044 178 145.196 178 133.5 178H89C89 178 0 178 89 89C102.353 89 118.581 89 133.506 89C145.198 89 151.044 89 155.784 90.5138C165.628 93.6579 173.342 101.372 176.486 111.216C178 115.956 178 121.804 178 133.5Z" fill="currentColor"/>
+                    <path d="M89 89C75.6474 89 59.4187 89 44.4945 89C32.8021 89 26.9559 89 22.2163 87.4863C12.3719 84.3421 4.65791 76.6281 1.51375 66.7837C0 62.0442 0 56.1961 0 44.5C0 32.8039 0 26.9559 1.51375 22.2163C4.65791 12.3719 12.3719 4.65791 22.2163 1.51375C26.9559 0 32.8039 0 44.5 0H89C89 0 178 6.10352e-05 89 89Z" fill="currentColor"/>
+                    <path d="M338.343 116C333.077 116 328.426 114.841 324.391 112.522C320.424 110.204 317.278 106.999 314.952 102.907C312.695 98.7474 311.567 94.0422 311.567 88.7914C311.567 83.5406 312.695 78.9036 314.952 74.8802C317.278 70.7887 320.424 67.5837 324.391 65.2652C328.426 62.9466 333.077 61.7874 338.343 61.7874C342.652 61.7874 346.551 62.6057 350.039 64.2423C353.527 65.8107 356.4 68.061 358.657 70.9933C360.914 73.8574 362.35 77.1988 362.966 81.0175H350.552C349.8 78.2217 348.363 76.0395 346.243 74.4711C344.123 72.9027 341.558 72.1185 338.549 72.1185C335.744 72.1185 333.316 72.8004 331.265 74.1642C329.281 75.5281 327.742 77.4715 326.648 79.9946C325.554 82.5177 325.007 85.45 325.007 88.7914C325.007 92.201 325.554 95.1674 326.648 97.6905C327.742 100.214 329.315 102.191 331.367 103.623C333.419 104.987 335.813 105.669 338.549 105.669C341.558 105.669 344.123 104.885 346.243 103.316C348.363 101.748 349.8 99.5658 350.552 96.7699H362.966C362.35 100.589 360.88 103.964 358.554 106.896C356.297 109.76 353.425 112.011 349.936 113.647C346.517 115.216 342.652 116 338.343 116Z" fill="currentColor"/>
+                    <path d="M289.221 114.977V62.8103H302.148V114.977H289.221Z" fill="currentColor"/>
+                    <path d="M288.606 54.2181V40H302.661V54.2181H288.606Z" fill="currentColor"/>
+                    <path d="M231 114.977V41.3298H244.337V104.441H280.655V114.977H244.337H237.361H231Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M395.777 116C390.237 116 385.347 114.841 381.107 112.522C376.935 110.204 373.686 106.999 371.361 102.907C369.035 98.7474 367.872 94.0081 367.872 88.6891C367.872 83.3701 369.035 78.699 371.361 74.6757C373.686 70.6523 376.935 67.5155 381.107 65.2652C385.347 62.9466 390.237 61.7874 395.777 61.7874C401.386 61.7874 406.276 62.9466 410.448 65.2652C414.62 67.5155 417.869 70.6523 420.194 74.6757C422.52 78.699 423.683 83.3701 423.683 88.6891C423.683 94.0081 422.486 98.7474 420.092 102.907C417.766 106.999 414.518 110.204 410.346 112.522C406.173 114.841 401.317 116 395.777 116ZM403.164 103.623C400.975 104.987 398.513 105.669 395.777 105.669C392.973 105.669 390.477 104.987 388.288 103.623C386.168 102.191 384.458 100.214 383.159 97.6905C381.928 95.0992 381.312 92.0646 381.312 88.5868C381.312 83.4724 382.68 79.4491 385.416 76.5169C388.151 73.5846 391.605 72.1185 395.777 72.1185C399.95 72.1185 403.369 73.5846 406.037 76.5169C408.772 79.4491 410.14 83.4724 410.14 88.5868C410.14 92.0646 409.525 95.0992 408.294 97.6905C407.063 100.214 405.353 102.191 403.164 103.623Z" fill="currentColor"/>
+                    <path d="M433.191 114.977V62.8103H445.81V72.4026C447.058 69.4103 448.802 67.0311 451.042 65.2652C453.983 62.9466 457.505 61.7874 461.609 61.7874C463.045 61.7874 464.071 61.9238 464.687 62.1965V74.3688C464.345 74.2324 463.866 74.1642 463.25 74.1642C462.635 74.096 461.882 74.0619 460.993 74.0619C456 74.0619 452.273 75.153 449.811 77.3352C447.348 79.5173 446.117 82.9951 446.117 87.7685V114.977H433.191Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M495.557 116C490.017 116 485.161 114.841 480.989 112.522C476.885 110.204 473.671 106.999 471.345 102.907C469.088 98.8156 467.96 94.1104 467.96 88.7914C467.96 83.4724 469.088 78.8013 471.345 74.778C473.671 70.6864 476.885 67.5155 480.989 65.2652C485.093 62.9466 489.88 61.7874 495.352 61.7874C500.55 61.7874 505.064 62.8784 508.894 65.0606C512.724 67.1745 515.699 70.175 517.82 74.0619C519.94 77.9489 521 82.4837 521 87.6662C521 88.6209 520.966 89.5074 520.897 90.3257C520.829 91.144 520.726 91.9623 520.59 92.7806H481.103C481.563 96.5659 482.756 99.6004 484.682 101.884C487.281 104.817 490.941 106.283 495.66 106.283C498.396 106.283 500.789 105.771 502.841 104.748C504.893 103.725 506.398 102.157 507.355 100.043H519.564C517.854 104.953 514.947 108.84 510.843 111.704C506.808 114.568 501.713 116 495.557 116ZM495.147 71.5047C499.182 71.5047 502.328 72.7322 504.585 75.1871C506.449 77.2142 507.543 80.0783 507.868 83.7793H481.308C481.871 80.597 482.995 78.0057 484.682 76.0054C487.281 73.005 490.77 71.5047 495.147 71.5047Z" fill="currentColor"/>
+                </svg>
+                <address class="text-center lg:text-left not-italic">
+                    <div class="font-bold text-xl mb-3 text-white">Licore</div>
+                    <div class="text-gray-500 text-sm">&copy; 2025 Licore. All rights reserved.</div>
+                </address>
+            </div>
+            <div class="flex flex-col items-center lg:items-end gap-8">
+                <nav class="flex flex-wrap gap-6 justify-center lg:justify-end">
+                    <a href="../index.html#technologies" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">Technologies</a>
+                    <a href="../index.html#contact" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">Contact</a>
+                    <a href="#" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">Blog</a>
+                    <a href="mailto:contact@licore.dev" class="text-gray-400 hover:text-white font-medium transition-colors duration-300">Email</a>
+                </nav>
+                <div class="flex items-center space-x-6">
+                    <a href="mailto:contact@licore.dev" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-300">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/licore" target="_blank" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-300">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
