@@ -12,6 +12,9 @@ Allow: /src/
 Allow: *.css
 Allow: *.js
 
+# Telegram Instant View template
+InstantView: https://licore.dev/instantview-template.xml
+
 # Sitemap
 Sitemap: https://licore.dev/sitemap.xml
 Sitemap: https://licore.dev/sitemap.xml

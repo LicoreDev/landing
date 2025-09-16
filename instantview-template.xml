@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instantview version="1.0">
+    <ruleset>
+    <meta>
+        <name>Licore Blog</name>
+        <description>Instant View template for Licore blog articles</description>
+        <author>Licore Team</author>
+        <version>1.0</version>
+    </meta>
+
+    <rules>
+        <!-- Match blog article URLs -->
+        <rule>
+            <conditions>
+                <url-pattern>/blog/why-typescript-for-startups.html</url-pattern>
+                <url-pattern>/blog/.*\.html</url-pattern>
+            </conditions>
+            <actions>
+                <set-property name="title" value="$//h1[@class='text-4xl md:text-6xl font-bold mb-6 text-black leading-tight']" />
+                <set-property name="subtitle" value="$//p[@class='text-xl text-gray-600 mb-8 leading-relaxed']" />
+                <set-property name="author" value="Licore Team" />
+                <set-property name="published_time" value="$//div[@class='flex items-center space-x-6 text-sm text-gray-500']//div[contains(text(), 'September')]" />
+
+                <!-- Main content -->
+                <set-property name="body" value="$//div[@class='prose prose-lg max-w-none']" />
+
+                <!-- Cover image (using the Licore icon as fallback) -->
+                <set-property name="cover" value="https://licore.dev/src/icons/LicoreIcon.svg" />
+
+                <!-- Channel information -->
+                <set-property name="channel" value="@licoredev" />
+                <set-property name="channel_name" value="Licore" />
+            </actions>
+        </rule>
+
+        <!-- Blog index page -->
+        <rule>
+            <conditions>
+                <url-pattern>/blog/$</url-pattern>
+                <url-pattern>/blog/index.html</url-pattern>
+            </conditions>
+            <actions>
+                <set-property name="title" value="$//h1[@class='text-4xl md:text-6xl font-bold mb-8 text-black leading-tight']" />
+                <set-property name="subtitle" value="$//p[@class='text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed']" />
+                <set-property name="author" value="Licore Team" />
+
+                <!-- Main content -->
+                <set-property name="body" value="$//section[@class='py-24 bg-white']" />
+
+                <!-- Cover image -->
+                <set-property name="cover" value="https://licore.dev/src/icons/LicoreIcon.svg" />
+
+                <!-- Channel information -->
+                <set-property name="channel" value="@licoredev" />
+                <set-property name="channel_name" value="Licore" />
+            </actions>
+        </rule>
+    </rules>
+
+    <!-- Content processing rules -->
+    <content-rules>
+        <!-- Remove unwanted elements -->
+        <rule>
+            <conditions>
+                <element>script</element>
+                <element>style</element>
+                <element>nav</element>
+                <element>header</element>
+                <element>footer</element>
+                <element>aside</element>
+                <element>.hidden</element>
+            </conditions>
+            <actions>
+                <remove />
+            </actions>
+        </rule>
+
+        <!-- Process images -->
+        <rule>
+            <conditions>
+                <element>img</element>
+            </conditions>
+            <actions>
+                <set-attribute name="src" value="$src" />
+                <set-attribute name="alt" value="$alt" />
+            </actions>
+        </rule>
+
+        <!-- Process links -->
+        <rule>
+            <conditions>
+                <element>a</element>
+            </conditions>
+            <actions>
+                <set-attribute name="href" value="$href" />
+            </actions>
+        </rule>
+
+        <!-- Process headings -->
+        <rule>
+            <conditions>
+                <element>h1</element>
+                <element>h2</element>
+                <element>h3</element>
+                <element>h4</element>
+                <element>h5</element>
+                <element>h6</element>
+            </conditions>
+            <actions>
+                <set-attribute name="class" value="iv-card__title" />
+            </actions>
+        </rule>
+
+        <!-- Process paragraphs -->
+        <rule>
+            <conditions>
+                <element>p</element>
+            </conditions>
+            <actions>
+                <set-attribute name="class" value="iv-card__text" />
+            </actions>
+        </rule>
+
+        <!-- Process blockquotes -->
+        <rule>
+            <conditions>
+                <element>blockquote</element>
+            </conditions>
+            <actions>
+                <set-attribute name="class" value="iv-card__quote" />
+            </actions>
+        </rule>
+
+        <!-- Process lists -->
+        <rule>
+            <conditions>
+                <element>ul</element>
+                <element>ol</element>
+            </conditions>
+            <actions>
+                <set-attribute name="class" value="iv-card__list" />
+            </actions>
+        </rule>
+
+        <!-- Process list items -->
+        <rule>
+            <conditions>
+                <element>li</element>
+            </conditions>
+            <actions>
+                <set-attribute name="class" value="iv-card__list-item" />
+            </actions>
+        </rule>
+
+        <!-- Process code blocks -->
+        <rule>
+            <conditions>
+                <element>pre</element>
+                <element>code</element>
+            </conditions>
+            <actions>
+                <set-attribute name="class" value="iv-card__code" />
+            </actions>
+        </rule>
+    </content-rules>
+</ruleset>
+</instantview>
