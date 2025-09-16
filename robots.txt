@@ -6,15 +6,22 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /config/
 Disallow: /src/private/
+Disallow: /.git/
 
 # Allow access to CSS and JS files
 Allow: /src/
 Allow: *.css
 Allow: *.js
 
+# Allow access to all technology pages
+Allow: /technology/
+Allow: /blog/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
 # Telegram Instant View template
 InstantView: https://licore.dev/instantview-template.xml
 
 # Sitemap
-Sitemap: https://licore.dev/sitemap.xml
 Sitemap: https://licore.dev/sitemap.xml
